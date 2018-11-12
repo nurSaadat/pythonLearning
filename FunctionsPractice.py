@@ -105,3 +105,12 @@ def product(lst):
   for element in lst:
     prod = prod * element
   return prod
+
+def median(lst):
+  lst = sorted(lst)
+  if len(lst) % 2 == 1:
+    x = len(lst)/2
+    return lst[x]
+  else:
+    x = len(lst)/2
+    return (float(lst[x]+lst[x-1])/2)

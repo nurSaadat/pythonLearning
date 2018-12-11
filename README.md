@@ -4,8 +4,10 @@ My first programs on Python
 * module names should be lowercase with underscore (_) between words
 
 ### 5/12/2018
-* to get input type `input("some input, please")`
-
+* to get input type 
+```python
+input("some input, please")
+```
 ```python
 X - hours / Y - minutes ==> Find total minutes
 X = int(input())

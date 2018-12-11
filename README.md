@@ -33,8 +33,9 @@ for i in range(n):
 	print('*' * n)
 ```
 * print() function
-...`print() #by default goes on the next line`
-...`print(end = '') #will not go on the next line`
+
+   print() #by default goes on the next line`
+  `print(end = '') #will not go on the next line`
 
 * list comprehension
 `a, b =(int(i) for i in input().split())`
@@ -76,7 +77,7 @@ dna[::-1] #reverse
 students = ['Dave', 'John', 'Rose', 'Jade']
 for student in students:
 	print('Hello ' + student + '!')
-#same indexation
+#same indexation as strings
 len(students) #4
 #can add and mutiply. original list don't change
 fruit = [kiwi, apple, orange, pineapple]

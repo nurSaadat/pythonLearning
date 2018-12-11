@@ -153,4 +153,9 @@ a = [0] * 5 #[0, 0, 0, 0, 0]
 a = [0 for i in range(5)] #[0, 0, 0, 0, 0]
 a = [i*i for i in range(5)] #[0, 1, 4, 9, 16]
 a = [int(i) for i in input().split()]
+
+n = 3
+a = [[0] * n] * n
+a = [[0] * n for i in range(n)]
+a = [[0 for j in range(n)] for i in range(n)]
 ```

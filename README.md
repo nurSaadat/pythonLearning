@@ -25,23 +25,27 @@ b = int(b)
 
 ### 10/12/2018
 * for-cycle 
-`for i in range(10):`
-`for i in 2,3,5:`
-
+```python
+for i in range(10):
+for i in 2,3,5:
+```
 * range() function
-`range(start = 0, to, step = 1)`
+```python
+range(start = 0, to, step = 1)
+```
 ```python
 for i in range(n):
 	print('*' * n)
 ```
 * print() function
-
-  `print() #by default goes on the next line`
-  `print(end = '') #will not go on the next line`
-
+  ```python
+  print() #by default goes on the next line
+  print(end = '') #will not go on the next line
+  ```
 * list comprehension
-`a, b =(int(i) for i in input().split())`
-
+```python
+a, b =(int(i) for i in input().split())
+```
 * strings are not mutable
 
 * print all characters in c
@@ -49,7 +53,6 @@ for i in range(n):
 for c in genome:
 	print(c)
 ```
-
 * count all 'C' in genom
 ```python
 genome = input()

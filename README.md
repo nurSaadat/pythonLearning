@@ -122,3 +122,35 @@ if 'Dirk' not in students:
 ind = students.index('Rose') #returns index
 ind = students.index('Roxy') #error
 ```
+* sorting list
+```python
+ordered_students = sorted(students) #original list will not change
+students.sort() #original list changed
+students.min()
+students.max()
+```
+* reversing list
+```python
+students.reverse()
+rev_students = reversed(students)
+students[::-1]
+```
+* lists are mutable
+```python
+a = [1, 2, 3]
+b = a
+a[1] = 4 #List object is shared 
+# a = [1, 4, 3]
+# b = [1, 4, 3]
+b[2] = 5
+# a = [1, 4, 5]
+# b = [1, 4, 5]
+```
+* generating list
+```python
+a = [0] * 5 #[0, 0, 0, 0, 0]
+#list comprehension
+a = [0 for i in range(5)] #[0, 0, 0, 0, 0]
+a = [i*i for i in range(5)] #[0, 1, 4, 9, 16]
+a = [int(i) for i in input().split()]
+```

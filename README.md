@@ -34,7 +34,7 @@ for i in range(n):
 ```
 * print() function
 
-   print() #by default goes on the next line`
+  `print() #by default goes on the next line`
   `print(end = '') #will not go on the next line`
 
 * list comprehension

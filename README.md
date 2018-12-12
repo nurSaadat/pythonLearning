@@ -159,3 +159,10 @@ a = [[0] * n] * n
 a = [[0] * n for i in range(n)]
 a = [[0 for j in range(n)] for i in range(n)]
 ```
+
+### 12/12/2018
+* functions
+```python
+def name(arguments):
+	#function body
+```

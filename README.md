@@ -165,4 +165,23 @@ a = [[0 for j in range(n)] for i in range(n)]
 ```python
 def name(arguments):
 	#function body
+	return
 ```
+* function should be declared earlier than first used
+* arbitrary number of arguments
+```python
+def min(*a):
+	m = a[0]
+	for x in a:
+		if m > x:
+			m = x
+	return m
+```
+* default arguments
+```python
+def print(a = '', end = '\n'):
+	#...
+
+print() #will print empty string and go to next line
+```
+* when passing arguments without names they will be assigned in defined order

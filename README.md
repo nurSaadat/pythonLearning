@@ -160,7 +160,7 @@ a = [[0] * n for i in range(n)]
 a = [[0 for j in range(n)] for i in range(n)]
 ```
 
-### 12/12/2018
+### *12/12/2018*
 * functions
 ```python
 def name(arguments):
@@ -185,3 +185,54 @@ def print(a = '', end = '\n'):
 print() #will print empty string and go to next line
 ```
 * when passing arguments without names they will be assigned in defined order
+
+### *15/12/2018*
+* sets
+```python
+s = set() #empty set
+basket = {'apple', 'orange', 'plum', 'pear'}
+'orange' in basket #True
+'cherry' in basket #False
+s.add(element)
+s.remove(element) #if no element then ERROR
+s.discard(element) #if no element then NO ERROR
+s.clear()
+len(s) #number of elements in set
+```
+* dictionary - key-value pairs
+* creating dictionary
+```python
+dict()
+{}
+d = {'a': 239, 10:100, 'key': 'value'}
+print(d['a'])
+print(d[10])
+```
+* operations with dictionaries
+```python
+dictionary = {...}
+key in dictioary #True/False
+key not in dictionary #True/False
+dictionary[key] = value #assigning
+dictionary[key] #if key is not in dictionary then ERROR
+dictionary.get(key) #returns value or None
+del dictionary[key]
+```
+* dictionaries
+1. are mutable
+2. have no order
+3. all keys are different
+4. keys are immutable
+
+* looking through the dictionary
+```python
+d = {'C': 12, 'A': 23, 'T': 67, 'G': 18}
+for key in d:
+	print(key, end = ' ')
+for key in d.keys():
+	print(key, end = ' ')
+for value in d.values():
+	print(value, end = ' ')
+for key,value in d.items():
+	print(key, value, end = ';')
+```

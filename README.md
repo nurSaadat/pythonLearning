@@ -167,7 +167,7 @@ def name(arguments):
 	#function body
 	return
 ```
-* function should be declared earlier than first used
+* *function should be declared earlier than first used*
 * arbitrary number of arguments
 ```python
 def min(*a):
@@ -184,7 +184,7 @@ def print(a = '', end = '\n'):
 
 print() #will print empty string and go to next line
 ```
-* when passing arguments without names they will be assigned in defined order
+* *when passing arguments without names they will be assigned in defined order*
 
 ### *15/12/2018*
 * sets
@@ -199,7 +199,7 @@ s.discard(element) #if no element then NO ERROR
 s.clear()
 len(s) #number of elements in set
 ```
-* dictionary - key-value pairs
+* *dictionary - key-value pairs*
 * creating dictionary
 ```python
 dict()
@@ -235,4 +235,40 @@ for value in d.values():
 	print(value, end = ' ')
 for key,value in d.items():
 	print(key, value, end = ';')
+```
+### *16/12/2018*
+* *files*
+* reading from file
+```python
+inf = open('file.txt', 'r') #open('file.txt')
+s1 = inf.readline() #read first line
+s2 = inf.readline() #read second line
+inf.close()
+
+with open('text.txt') as inf: #automaticly closing file
+	s1 = inf.readline()
+	s2 = inf.readline()
+```
+* file functions
+```python
+s = inf.readline().strip() #taking away special characters
+os.path.join('.','dirname','filename.txt')
+```
+* reading file line-by-line
+```python
+with open('input.txt') as inf:
+	for line in inf:
+		line = line.strip()
+		print(line)
+```
+* writing to the file
+```python
+ouf = open('file.txt', 'w')
+ouf.write('Some text\n')
+ouf.write(str(25))
+ouf.close()
+
+with open('output.txt', 'w') as ouf:
+	ouf.write('Some text\n')
+	ouf.write(str(25))
 ```

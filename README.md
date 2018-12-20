@@ -272,3 +272,29 @@ with open('output.txt', 'w') as ouf:
 	ouf.write('Some text\n')
 	ouf.write(str(25))
 ```
+* modules
+```python
+import my_module
+from my_module import foo
+from my_module import *
+from my_module import foo as my_foo
+```
+* requests
+```python
+import requests
+
+r = requests.get('https://example.com') #GET
+print(r.text)
+
+url = 'https://example.com'
+par = {'key1': 'value1', 'key2': 'value2'}
+r = requests.get(url, params = par) #passing parameters
+print(r.url) #url GET 
+
+url = 'http://httpbin.org/cookies'
+cookies = {'cookies_are': 'working'}
+r = requests.get(url, cookies = cookies) #sending request to the server
+print(r.text)
+
+print(r.cookies['example_cookie_name']) #using cookies from server
+```
